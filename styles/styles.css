@@ -16,6 +16,10 @@ body {
   background: hsl(232, 19%, 15%);
 }
 
+body.active {
+  background: #fff;
+}
+
 h1 {
   font-size: 5rem;
 }
@@ -31,6 +35,10 @@ h3 {
 p {
   font-size: 1.8rem;
   color: hsl(228, 34%, 66%);
+}
+
+p.active {
+  color: hsl(228, 12%, 44%);
 }
 
 .container {
@@ -58,6 +66,10 @@ p {
   margin-bottom: 0.7rem;
 }
 
+.followers h3.active {
+  color: hsl(230, 17%, 14%);
+}
+
 .mode {
   padding-top: 2rem;
   display: flex;
@@ -76,11 +88,20 @@ p {
   height: 30px;
 }
 
+.switch.active {
+  background: hsl(230, 22%, 74%);
+}
+
 .switch_circle {
   width: 20px;
   height: 20px;
   background: hsl(232, 19%, 15%);
   border-radius: 100%;
+}
+
+.switch_circle.active {
+  background: #fff;
+  transform: translateX(30px);
 }
 
 .h_grid {
@@ -119,6 +140,10 @@ p {
   overflow: hidden;
 }
 
+.bio.active {
+  background: hsl(227, 47%, 96%);
+}
+
 .name {
   display: flex;
   gap: 1rem;
@@ -132,6 +157,10 @@ p {
 .amount h1 {
   color: #fff;
   margin-bottom: 0.5rem;
+}
+
+.amount h1.active {
+  color: hsl(230, 17%, 14%);
 }
 
 .amount h4 {
@@ -152,8 +181,12 @@ p {
   align-self: center;
 }
 
-.new_follower p {
+.green {
   color: #fff;
+}
+
+.green.active {
+  color: hsl(163, 72%, 41%);
 }
 
 .one {
@@ -193,6 +226,12 @@ p {
   gap: 3rem;
 }
 
+@media screen and (min-width: 768px) {
+  .f_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .f_grid {
     grid-template-columns: repeat(4, 1fr);
@@ -208,6 +247,10 @@ p {
   margin-bottom: 3rem;
 }
 
+.second h3.active {
+  color: hsl(230, 17%, 14%);
+}
+
 .overview {
   background: hsl(228, 28%, 20%);
   border-radius: 10px;
@@ -217,12 +260,20 @@ p {
   gap: 3rem 0;
 }
 
+.overview.active {
+  background: hsl(227, 47%, 96%);
+}
+
 .overview img {
   justify-self: end;
 }
 
 .overview h2 {
   color: #fff;
+}
+
+.overview h2.active {
+  color: hsl(230, 17%, 14%);
 }
 
 .trend {
@@ -249,6 +300,12 @@ p {
 .s_grid {
   display: grid;
   gap: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .s_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (min-width: 1024px) {
